@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayto.me</title>
+    <link rel="icon" href="/assets/images/1000_F_298412362_ZNN72WoRPzM2xvGXkEv1A9hdqgBGdB62.jpg" type="image/jpg">
+    <style>
+        .body {
+            display: grid;
+            grid-template-columns: repeat(11, 1fr);
+            grid-template-rows: repeat(26, 1fr);
+            width: 1205px;
+            height: 6539px;
+            background-color: #D6FC52;
+        }
+
+        .head {
+            display: grid;
+            grid-column: 1 / 12;
+            grid-row: 1 / 2;
+        }
+
+        .logo {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 129px;
+            height: 31px;
+        }
+
+        .nav {
+            display: grid;
+            grid-column: 3 / 12;
+            grid-row: 1 / 2;
+        }
+
+        .nav-1 {
+            display: grid;
+            grid-column: 3 / 7;
+            grid-row: 1 / 2;
+            list-style-type: none;
+        }
+
+        .nav-2 {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+            width: 67px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .nav-3 {
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+            width: 37px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .nav-4 {
+            grid-column: 5 / 6;
+            grid-row: 1 / 2;
+            width: 30px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .nav-5 {
+            grid-column: 6 / 7;
+            grid-row: 1 / 2;
+            width: 77px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .nav-6 {
+            grid-column: 10 / 11;
+            grid-row: 1 / 2;
+            width: 60px;
+            height: 24px;
+            background-color: transparent;
+            border: none;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .nav-7 {
+            grid-column: 11 / 12;
+            grid-row: 1 / 2;
+            width: 92px;
+            height: 22px;
+            border-radius: 10px;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            color: white;
+            background-color: black;
+        }
+
+        .main {
+            display: grid;
+            grid-column: 1 / 12;
+            grid-row: 2 / 27;
+        }
+
+        .main-1 {
+            grid-column: 3 / 11;
+            grid-row: 3 / 4;
+            width: 1100px;
+            height: 220px;
+            margin-left: 150px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 107px;
+            line-height: 110px;
+            letter-spacing: 7px;
+            text-align: center;
+        }
+
+        .main-2 {
+            grid-column: 4 / 9;
+            grid-row: 4 / 5;
+            width: 753px;
+            height: 192px;
+            margin-left: 200px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 48px;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+        .main-3 {
+            grid-column: 1/12;
+            grid-row: 5 / 6;
+            width: 761px;
+            height: 88px;
+            border-radius: 15px;
+            background-color: black;
+            color: #D6FC52;
+            margin-left: 300px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 41px;
+            line-height: 58px;
+            letter-spacing: 0.8px;
+            text-align: center;
+        }
+
+        .main-4 {
+            grid-column: 1 / 12;
+            grid-row: 6 / 7;
+            width: 386px;
+            height: 28px;
+            margin-left: 500px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            text-align: center;
+        }
+
+        .main-5 {
+            grid-column: 1 / 12;
+            grid-row: 9 /10;
+            width: 580px;
+            height: 110px;
+            margin-left: 400px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 101px;
+            line-height: 110px;
+            letter-spacing: 7px;
+            text-align: center;
+        }
+
+        .main-6 {
+            grid-column: 1 / 12;
+            grid-row: 10 / 11;
+            width: 742px;
+            height: 240px;
+            margin-left: 350px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        .main-7 {
+            grid-column: 1 / 12;
+            grid-row: 11 / 12;
+            width: 1141px;
+            height: 642px;
+            margin-left: 75px;
+        }
+
+        .main-8 {
+            grid-column: 1 / 12;
+            grid-row: 12 / 13;
+            width: 539px;
+            height: 110px;
+            margin-left: 450px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 99px;
+            line-height: 110px;
+            text-align: center;
+            letter-spacing: 7px;
+        }
+
+        .main-9 {
+            grid-column: 1 / 12;
+            grid-row: 13 / 14;
+            width: 698px;
+            height: 144px;
+            margin-left: 375px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        .main-10 {
+            grid-column: 1 / 12;
+            grid-row: 14 / 15;
+            width: 1141px;
+            height: 642px;
+            margin-left: 65px;
+        }
+
+        .main-11 {
+            grid-column: 1 / 12;
+            grid-row: 16 / 17;
+            width: 466px;
+            height: 110px;
+            margin-left: 450px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 101px;
+            line-height: 110px;
+            text-align: center;
+            letter-spacing: 7px;
+        }
+
+        .main-12 {
+            grid-column: 1 / 12;
+            grid-row: 17 / 18;
+            width: 724px;
+            height: 240px;
+            margin-left: 300px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 42px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        .main-13 {
+            grid-column: 1 / 12;
+            grid-row: 18 / 19;
+            width: 1141px;
+            height: 642px;
+            margin-left: 50px;
+        }
+
+        .main-14 {
+            grid-column: 1 / 12;
+            grid-row: 19 / 20;
+            width: 1063px;
+            height: 220px;
+            margin-left: 150px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 106px;
+            line-height: 110px;
+            text-align: center;
+            letter-spacing: 7px;
+        }
+
+        .main-15 {
+            grid-column: 1 / 12;
+            grid-row: 20 / 21;
+            width: 400px;
+            height: 225px;
+            margin: auto;
+        }
+
+        .main-16 {
+            grid-column: 1/12;
+            grid-row: 21 / 22;
+            width: 761px;
+            height: 88px;
+            border-radius: 15px;
+            margin-left: 300px;
+            background-color: black;
+            color: #D6FC52;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 41px;
+            line-height: 58px;
+            letter-spacing: 0.8px;
+            align-content: center;
+        }
+
+        .main-17 {
+            grid-column: 1 / 12;
+            grid-row: 22 / 23;
+            width: 386px;
+            height: 28px;
+            margin-left: 500px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            align-content: center;
+        }
+
+        .main-18 {
+            grid-column: 1 / 12;
+            grid-row: 23 / 24;
+            width: 1405px;
+            height: 196px;
+            font-family: 'Permanent Marker', Times, serif;
+            font-weight: 400;
+            font-size: 62px;
+            line-height: 161.2px;
+            text-align: right;
+            text-transform: uppercase;
+            background-color: black;
+            color: #D6FC52;
+        }
+
+        .main-19 {
+            grid-column: 1 / 12;
+            grid-row: 24 / 25;
+            width: 683px;
+            height: 144px;
+            margin-left: 350px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 37px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        .main-20 {
+            grid-column: 1 / 12;
+            grid-row: 25 / 26;
+            width: 193px;
+            height: 48px;
+            background-color: transparent;
+            border: none;
+            margin-left: 575px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 38px;
+            line-height: 48px;
+            align-content: center;
+            letter-spacing: 1.5px;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(11, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            width: 1205px;
+            height: 200px;
+        }
+
+        .footer-1 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            width: 129px;
+            height: 31px;
+        }
+
+        .footer-2 {
+            display: grid;
+            grid-column: 2 / 6;
+            grid-row: 2 / 3;
+            list-style-type: none;
+        }
+
+        .footer-3 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            width: 67px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .footer-4 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+            width: 37px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .footer-5 {
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
+            width: 30px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .footer-6 {
+            grid-column: 5 / 6;
+            grid-row: 2 / 3;
+            width: 77px;
+            height: 24px;
+            text-decoration-line: none;
+            color: black;
+            font-family: 'Roboto', Times, serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .footer-7 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+            width: 275px;
+            height: 26px;
+            font-family: 'Manrope', Times, serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        .footer-8 {
+            grid-column: 11 / 12;
+            grid-row: 4 / 5;
+        }
+
+        @media all and (min-width:500px) {
+            .footer {
+                width: 1205px;
+                height: 200px;
+            }
+        }
+
+        @media all and (max-width: 499px) {
+            .footer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <header class="head">
+        <div class="logo">
+            <img src="/assets/images/IMAGE.png" alt="logo" class="logo">
+        </div>
+        <nav class="nav">
+            <ul class="nav-1">
+                <li class="nav-2"><a target="_blank" href="#" class="nav-2">Overview</a></li>
+                <li class="nav-3"><a target="_blank" href="#" class="nav-3">Price</a></li>
+                <li class="nav-4"><a target="_blank" href="#" class="nav-4">FAQ</a></li>
+                <li class="nav-5"><a target="_blank" href="#" class="nav-5">Contact Us</a></li>
+            </ul>
+            <button type="button" class="nav-6">Sign In</button>
+            <button type="button" class="nav-7">Sign Up</button>
+        </nav>
+    </header>
+    <main class="main">
+        <p class="main-1">A magical new way to create a website.</p>
+        <p class="main-2">Welcome to the next generation of website builders. It's never been easier to create a
+            website. Expand your
+            business with wayto.me</p>
+        <button type="button" class="main-3">Try it for free</button>
+        <p class="main-4">14-days free trial. No credit card required</p>
+        <p class="main-5">Super easy</p>
+        <p class="main-6">We made an intuitive and easy-to-use website builder with a visual interface. Building a
+            website with our
+            tools is easier than making a story on Instagram.</p>
+        <div class="main-7">
+            <img src="/assets/images/IMAGE1.png" alt="photo" class="main-7">
+        </div>
+        <p class="main-8">Super fast</p>
+        <p class="main-9">No more workflows and unpredictable deadlines. Just make content and publish.</p>
+        <div class="main-10">
+            <img src="/assets/images/IMAGE2.png" alt="photo" class="main-10">
+        </div>
+        <p class="main-11">Low cost</p>
+        <p class="main-12">Create and customize website in real time. You no longer need to spend money and time on
+            designers and
+            developers. Free website plan included.</p>
+        <div class="main-13">
+            <img src="/assets/images/IMAGE3.png" alt="photo" class="main-13">
+        </div>
+        <p class="main-14">Meet the new way to create a website</p>
+        <div class="main-15">
+            <img src="/assets/images/IMAGE4.png" alt="photo" class="main-15">
+        </div>
+        <button type="button" class="main-16">Try it for free</button>
+        <p class="main-17">14-days free trial. No credit card required.</p>
+        <p class="main-18">Special offer</p>
+        <p class="main-19">Tell about Wayto.me on your social network accounts and get a 3-month free plan. Just write
+            to
+            us to get it.
+        </p>
+        <button type="button" class="main-20">Learn how</button>
+    </main>
+</body>
+<footer class="footer">
+    <div class="footer-1">
+        <img src="/assets/images/IMAGE.png" alt="logo" class="footer-1">
+    </div>
+    <nav class="footer-2">
+        <ul class="footer-2">
+            <li class="footer-3"><a target="_blank" href="#" class="footer-3">Overview</a></li>
+            <li class="footer-4"><a target="_blank" href="#" class="footer-4">Price</a></li>
+            <li class="footer-5"><a target="_blank" href="#" class="footer-5">FAQ</a></li>
+            <li class="footer-6"><a target="_blank" href="#" class="footer-6">Contact Us</a></li>
+        </ul>
+    </nav>
+    <p class="footer-7">&copy; All Rights Reserved. Wayto.me</p>
+    <div class="footer-8">
+        <img src="/assets/images/Rectangle.png" alt="square" class="footer-8">
+        <img src="/assets/images/Rectangle-1.png" alt="square" class="footer-8">
+    </div>
+</footer>
+
+</html>
